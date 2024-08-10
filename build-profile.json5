@@ -1,0 +1,64 @@
+/*
+ * Copyright (c) 2024 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+{
+  "app": {
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 11,
+        "compatibleSdkVersion": 11,
+        "runtimeOS": "OpenHarmony"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/Admin/.ohos/config/openharmony/default_XComponent3D_shJbXBW2WK-pcMB_uF-q0pPa1BkgVHKFqxjSjAvnkaA=.cer",
+          "storePassword": "0000001BCE9F98115A371E1D3B1C386DFE5034BEFF670EC1C14113B7B82D3D563481AB8356FB81EBBA66F2",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B2116E3B57BE17F815707F0E7EF317132921FF4DFF48EF0D1AD5E0EB395F3F749C3F3BEC2041DA0",
+          "profile": "C:/Users/Admin/.ohos/config/openharmony/default_XComponent3D_shJbXBW2WK-pcMB_uF-q0pPa1BkgVHKFqxjSjAvnkaA=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/Admin/.ohos/config/openharmony/default_XComponent3D_shJbXBW2WK-pcMB_uF-q0pPa1BkgVHKFqxjSjAvnkaA=.p12"
+        }
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
